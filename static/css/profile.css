@@ -1,0 +1,157 @@
+.profile-container1 {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px 0  rgb(0 0 0 / 14%);
+    width: 90%;
+    margin: 15%;
+    max-width: 400px;
+    padding: 20px;
+    opacity: 0; /* Initially hidden for fade effect */
+    transition: opacity 0.5s ease; /* Transition for fade effect */
+}
+
+.profile-container1.active {
+    opacity: 1; /* Fully visible when active */
+}
+
+.profile-edit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    margin-left: 30px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c62828;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .profile-container1 {
+        width: 95%;
+        margin: 5%;
+        padding: 15px;
+    }
+    
+    label {
+        font-size: 1rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9rem;
+    }
+    
+    input[type="submit"],
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+    .profile-container1 {
+        width: 80%;
+        max-width: 500px;
+        margin: 10% auto;
+        padding: 20px;
+    }
+    
+    label {
+        font-size: 1.1rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1rem;
+    }
+    
+    input[type="submit"],
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 961px) {
+    .profile-container1 {
+        width: 70%;
+        max-width: 600px;
+        margin: 5% auto;
+        padding: 25px;
+    }
+    
+    label {
+        font-size: 1.2rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1.1rem;
+    }
+    
+    input[type="submit"],
+    button {
+        width: auto;
+        margin-left: 30%;
+    }
+}

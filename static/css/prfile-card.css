@@ -1,0 +1,132 @@
+/* Default styling for very small screens (mobile-first approach) */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    height: auto;
+}
+
+.cards__item {
+    display: flex;
+    width: 100%; /* Full width on small screens */
+    padding: 0.5rem;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 20px -10px rgb(0 0 0 / 64%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Adjustments for screen widths greater than 30rem (small tablets) */
+@media (min-width: 30rem) {
+    .cards__item {
+        width: 50%; /* 2 cards per row */
+    }
+}
+
+/* Adjustments for screen widths greater than 40rem (tablets) */
+@media (min-width: 40rem) {
+    .cards__item {
+        width: 33.3333%; /* 3 cards per row */
+    }
+    .card__image::before {
+        padding-top: 66.6%; /* 3:2 aspect ratio */
+    }
+}
+
+/* Adjustments for screen widths greater than 56rem (laptops and desktops) */
+@media (min-width: 56rem) {
+    .cards__item {
+        width: 25%; /* 4 cards per row */
+    }
+    .card__image::before {
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+    }
+}
+
+/* Adjustments for screen widths greater than 75rem (large desktops) */
+@media (min-width: 75rem) {
+    .cards__item {
+        width: 20%; /* 5 cards per row */
+    }
+}
+
+/* Universal styles for card content and images */
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card__image::before {
+    content: "";
+    display: block;
+    padding-top: 75%; /* 4:3 aspect ratio on very small screens */
+}
+
+.card:hover .card__image {
+    filter: contrast(100%);
+}
+
+.card__title {
+    color: #333333; /* Replace with actual color */
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+/* Images for specific card types */
+.card__image--flowers {
+    background-image: url(https://unsplash.it/800/600?image=82);
+}
+
+.card__image--river {
+    background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card__image--record {
+    background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card__image--fence {
+    background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    color: #333333;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}

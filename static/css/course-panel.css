@@ -1,0 +1,225 @@
+.heading {
+    margin-left: 0%;
+    margin-top: 0%;    
+    margin-bottom: 5%;
+    padding-right: 55%;
+    background-color: #cecece;
+}
+
+.text {
+    margin-left: 11%;
+}
+
+.short-language {
+    margin-top: -5%;
+    margin-left: 78%;
+}
+
+
+/* Media queries for responsive design */
+
+/* For small screens like mobile phones */
+@media (max-width: 576px) {
+    .heading {
+        padding-right: 0;
+    }
+
+    .text {
+        margin-left: 5%;
+    }
+
+    .short-language {
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+}
+
+/* For medium screens like tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+    .heading {
+        padding-right: 30%;
+    }
+
+    .text {
+        margin-left: 8%;
+    }
+
+    .short-language {
+        margin-top: 2%;
+        margin-left: 70%;
+    }
+}
+
+/* For large screens like desktops */
+@media (min-width: 993px) {
+    .heading {
+        margin-bottom: 5%;
+        padding-right: 55%;
+    }
+
+    .text {
+        margin-left: 11%;
+    }
+
+    .short-language {
+        margin-top: -5%;
+        margin-left: 78%;
+    }
+}
+
+.container {
+    color: #000000;
+    max-width: 290px;
+    margin-top: -23%;
+    margin-right: 5%;
+    padding: 1px;
+    float: inline-end;
+    text-align: center;
+    background-color: #bababa;
+}
+
+.video-preview {
+    position: relative;
+    display: inline-block;
+}
+
+.video-preview img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button img {
+    width: 40px;
+    height: 40px;
+    margin-top: -50%;
+    margin-bottom: 10%;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.pricing-option {
+    background-color: #bababa;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 150px;
+}
+
+.pricing-option.teams {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.discount {
+    background-color: #27ae60;
+    color: #fff;
+    padding: -2px 18px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.countdown {
+    font-size: 12px;
+    color: #e74c3c;
+}
+
+.buy-button {
+    background-color: #2d2d2de6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.guarantee,
+.access {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+
+/* Media queries for responsive design */
+
+/* For small screens like mobile phones */
+@media (max-width: 576px) {
+    .container {
+        max-width: 50%;
+        margin-top: 0;
+        margin-right: 40px;
+        float: inline-end;
+    }
+
+    .play-button img {
+        width: 30px;
+        height: 30px;
+        margin-top: -30%;
+        margin-bottom: 5%;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-option {
+        margin: 10px 0;
+    }
+}
+
+/* For medium screens like tablets */
+@media (min-width: 577px) and (max-width: 892px) {
+    .container {
+        max-width: 40%;
+        margin-top: -10%;
+        margin-right: 5%;
+    }
+
+    .play-button img {
+        width: 35px;
+        height: 35px;
+        margin-top: -40%;
+        margin-bottom: 8%;
+    }
+}
+
+/* For large screens like desktops */
+@media (min-width: 893px) and (min-width: 1093px) {
+    .container {
+        max-width: 290px;
+        margin-top: -20%;
+        margin-right: 10%;
+    }
+
+    .play-button img {
+        width: 40px;
+        height: 40px;
+        margin-top: -50%;
+        margin-bottom: 10%;
+    }
+}

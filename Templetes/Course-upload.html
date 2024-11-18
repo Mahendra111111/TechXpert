@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/student-profile.css">
+    <link rel="icon" href=".\images\techxpert.png" type="image/jng">
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <link rel="stylesheet" href="/css/prfile-card.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/Course-upload.css">
+    <title>Tech Xpert</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="/images/profile.jpeg" alt="">
+            </div>
+            <span class="logo_name" style="cursor: pointer;">Tech Xpert</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/Seller-panel/seller.html">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Seller-panel/Course-upload.html">
+                        <i class="bi bi-upload"></i>
+                        <span class="link-name">Courses Upload</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Seller-panel/history.html">
+                        <i class="bi bi-clock-history"></i>
+                        <span class="link-name">History</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="#">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard" id="Dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <h2 style="color: cornflowerblue;">Seller Panel</h2>
+            <img src="/images/techxpert.png" alt="">
+        </div><br><br><br><br><br>
+        <div class="container">
+            <h1>
+                Upload the Course
+                <center>
+                    <hr width="50%" style="border-top: 1px dotted ">
+                </center>
+            </h1>
+
+
+            <form id="enrollmentForm">
+
+                <h3> &#x2022; Client Information :-</h3>
+
+                <hr width="50%"><br>
+
+                <div class="form-group">
+                    <label for="clientName">Client Name:</label>
+                    <input type="text" id="clientName" name="clientName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientEducation">Client Education (in short):</label>
+                    <input type="text" id="clientEducation" name="clientEducation" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientEmail">Client Email:</label>
+                    <input type="email" id="clientEmail" name="clientEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientPhone">Client Phone No:</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientReview">Client's Review:</label>
+                    <textarea id="clientReview" name="clientReview" rows="4"></textarea>
+                </div>
+
+                <center><hr width="80%" style="border-top: 1px dashed "></center>
+                <br>
+
+                <h3> &#x2022; Course Information :-</h3>
+                <hr width="50%"><br>
+                <div class="form-group">
+                    <label for="courseName">Course Name:</label>
+                    <input type="text" id="courseName" name="courseName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseFees">Course Fees:</label>
+                    <input type="number" id="courseFees" name="courseFees" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseDescription">Course Description:</label>
+                    <textarea id="courseDescription" name="courseDescription" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseImage">Course Image Upload:</label>
+                    <input type="file" id="courseImage" name="courseImage" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseVideo">Course Video Upload:</label>
+                    <input type="file" id="courseVideo" name="courseVideo" accept="video/*">
+                </div>
+
+                <button type="submit">Upload Course</button>
+            </form>
+        </div><br><br>
+    </section>
+
+    <script src="/js/student-profile.js"></script>
+</body>
+
+</html>

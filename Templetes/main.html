@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Xpert</title>
+    <!-- <link rel="stylesheet" href="..\css\style.css" /> -->
+    <link rel="stylesheet" href="..\css\main.css" />
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="..\js\script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="icon" href=".\images\techxpert.png" type="image/jng">
+    <script src="/js/search.js"></script>
+</head>
+
+<body>
+
+
+    <!-- loader -->
+    <!-- <div class="loader-container">
+        <div class="loader1"></div>
+    </div>
+
+
+    <div id="website-content" class="website-content"> -->
+
+    <header>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn" id="navOpenBtn"></i>
+            <a href="/main.html" class="logo">Tech Xpert</a>
+
+            <!-- Navbar contents -->
+            <ul class="nav-links" id="navLinks">
+                <i class="uil uil-times navCloseBtn" id="navCloseBtn"></i>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+
+            <!-- Search bar -->
+            <div class="search-container">
+                <i class="uil uil-search search-icon" style="color: aliceblue;" id="searchIcon"></i>
+            </div>
+
+            <!-- Profile image -->
+            <div class="profile-container">
+                <a href="#" id="profileIcon">
+                    <img src="./images/techxpert.png" alt="Profile Icon" class="profile-icon">
+                </a>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="/profile/student-profile.html">Profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="search-box" id="searchBox">
+        <input type="text" id="searchInput" placeholder="Search for items...">
+    </div>
+    <!-- search containes start -->
+
+    <!-- <div class="item-container" id="itemContainer">
+        <div class="item">Apple</div>
+        <div class="item">Banana</div>
+        <div class="item">Cherry</div>
+        <div class="item">Date</div>
+        <div class="item">Elderberry</div>
+        <div class="item">Fig</div>
+        <div class="item">Grape</div>
+        <div class="item">Honeydew</div>
+    </div> -->
+
+
+    <div class="no-results" id="noResults">
+        No items match your search.
+    </div>
+
+
+    <!-- search containes end -->
+
+
+    <!-- search content results is not visible , do not make visible  -->
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <div id="results" class="card-container"></div>
+        </div>
+    </div>
+<br><br><br>
+    <!-- header -->
+    <section class="header">
+        <div class="overlay">
+            <div class="left">
+                <h1>Stay Ahead in a Rapidly Changing World<h3><i style="color: #8d7fff;"><small>Tech Xpert</small></i></h3>
+                </h1>
+                <br>
+                <p class="desc">
+                    Adapt and thrive with our expert-led courses designed to keep you competitive in today’s fast-paced environment. Learn at your own pace and unlock new opportunities for success!
+                </p>
+                <a href="#course">
+                    <button class="button">Learn More</button>
+                </a>
+            </div>
+            <div class="right">
+                <img src="/images/Techxpert-1.png" alt="Techxpert Image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- course continue -->
+    <section class="course-continue" id="courseContinue" style="display: none;">
+        <a id="continueLink" href="..\purches_course\purches_courses.html">
+            <div class="learn-continue-container">
+                <div class="learn-continue-content">
+                    <h1>Learn & Continue</h1>
+                    <p>Continue where you left off, and keep learning.</p>
+                    <button class="continue-button">Continue</button>
+                </div>
+                <div class="side-image">
+                    <img src="https://d15cw65ipctsrr.cloudfront.net/14/4dcbc397754fb880094f4ebde1fdb5/Java-Full-Stack-Developer-specialization-2-.png"
+                        alt="Learning Image">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="course" id="course"><br><br><br><br>
+        <h1>What to learn next</h1><br><br>
+        <p>There is a <b> Coding Section...</b></p><br>
+        <div class="wrapper">
+
+            <!-- <i id="left" class="fa-solid  fas fa-angle-left" style="visibility: hidden;"></i> -->
+
+            <ul class="carousel">
+                <li class="card">
+                    <a href="..\courses\course-panel.html">
+                        <div class="img">
+                            <img src="https://smartifysol.com/wp-content/uploads/2023/09/development.jpeg" alt=""
+                                draggable="false">
+                        </div>
+                        <h2 style="color: #000000; font-weight:bold;">Web Development full Course</h2>
+                        <span>Stephane Maarek...</span><br>
+                        <span><b>4.7</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (206,777)
+                        </span>
+
+                        <span><b style="color: azure;">₹549 &nbsp; </b><strike> ₹3,999</strike></span>
+                        <!-- <center><button class="add-card"><a href="cart.html">Add Cart</a></button></center> -->
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://blog.hyperiondev.com/wp-content/uploads/2017/12/py_machine.jpg" alt=""
+                                draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Python course all Topic covers</h2>
+                        <span>John Purcell...</span><br>
+                        <span><b>4.5</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (216,887)
+                        </span>
+
+                        <span><b style="color: azure;">₹599 &nbsp; </b><strike> ₹2,459</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_1920,q_auto"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Advance CSS BOOTCAMP Course</h2>
+                        <span>Kalob Taulian...</span><br>
+                        <span><b>4.1</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (7,667)
+                        </span>
+
+                        <span><b style="color: azure;">₹699 &nbsp; </b><strike> ₹4,559</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://t4.ftcdn.net/jpg/02/92/83/57/360_F_292835773_oImixQGFKLpOPnjfsbesHyqdjOk5hsxL.jpg"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Expencive Course : JAVA in details</h2>
+                        <span>Dr. Angela Yu...</span><br>
+                        <span><b>4.3</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (15,999)
+                        </span>
+
+                        <span><b style="color: azure;">₹899 &nbsp; </b><strike> ₹1,459</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img src="https://ncube.com/wp-content/uploads/2020/07/android-development.jpg"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Android Development full course</h2>
+                        <span>Jose Portilla...</span>
+                        <span><b>4.0</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (21,666)
+                        </span>
+
+                        <span><b style="color: azure;">₹499 &nbsp; </b><strike> ₹3,999</strike></span>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_639c3c682573ede2ef7e67c9_Best_Flutter_app_development_tools_and_app_builders_OG_image_ac87c76436.jpg"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Most Trending Flutter Bootcamp</h2>
+                        <span>John Purcell...</span><br>
+                        <span><b>4.7</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (216,887)
+                        </span>
+
+                        <span><b style="color: azure;">₹599 &nbsp; </b><strike> ₹2,459</strike></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <i id="right" class="fa-solid fas fa-angle-right" style="visibility: hidden;"></i> -->
+        </div>
+    </section>
+
+    <section class="course" id="course"><br><br><br><br>
+        <p><b> Business Manegment...</b></p><br>
+        <div class="wrapper">
+            <!-- <i id="left" class="fa-solid  fas fa-angle-left" style="visibility: hidden;"></i> -->
+            <ul class="carousel">
+                <li class="card">
+                    <a href="">
+                        <div class="img">
+                            <img src="https://imageio.forbes.com/specials-images/imageserve/633a774a842d06ecd68286ff/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+                                alt="" draggable="false">
+                        </div>
+                        <h2 style="color: #000000; font-weight:bold;">B.Manegment Course</h2>
+                        <span>Mark Zukerburge...</span><br>
+                        <span><b>4.7</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (206,777)
+                        </span>
+
+                        <span><b style="color: azure;">₹549 &nbsp; </b><strike> ₹3,999</strike></span>
+
+                        <!-- <center><button class="add-card"><a href="cart.html">Add Cart</a></button></center> -->
+
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://www.shutterstock.com/image-photo/young-happy-business-woman-working-600nw-2189325893.jpg"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Business Networking System</h2>
+                        <span>Kalob Taulian...</span><br>
+                        <span><b>4.5</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (216,887)
+                        </span>
+
+                        <span><b style="color: azure;">₹5,199 &nbsp; </b><strike> ₹10,459</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://cdn.zeebiz.com/hindi/sites/default/files/2023/07/08/144399-business-plan.jpg?im=FitAndFill=(1200,900)"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Succssesful Business Plans</h2>
+                        <span>John Purcell...</span><br>
+                        <span><b>4.1</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (7,667)
+                        </span>
+
+                        <span><b style="color: azure;">₹1,699 &nbsp; </b><strike> ₹4,559</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://poonawallafincorp.com/pfca/assets/og_image/og_image-business-model-overdraft.jpg"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Online prodct Sales & Marketing</h2>
+                        <span>Dr. Angela Yu...</span><br>
+                        <span><b>4.3</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (15,999)
+                        </span>
+
+                        <span><b style="color: azure;">₹1,099 &nbsp; </b><strike> ₹3,459</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://regent.ac.za/wp-content/uploads/2022/12/shutterstock_1564080871.jpg.webp"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">Human Resource Manegment</h2>
+                        <span>Jose Portilla...</span><br>
+                        <span><b>4.0</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (21,666)
+                        </span>
+
+                        <span><b style="color: azure;">₹899 &nbsp; </b><strike> ₹3,999</strike></span>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="">
+                        <div class="img"><img
+                                src="https://media.geeksforgeeks.org/wp-content/uploads/20230518174051/Business-Studies-copy.webp"
+                                alt="" draggable="false"> </div>
+                        <h2 style="color: #000000; font-weight:bold;">All types of Business in one Course</h2>
+                        <span>John Purcell...</span><br>
+                        <span><b>4.7</b> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"> </span> (216,887)
+                        </span>
+
+                        <span><b style="color: azure;">₹999 &nbsp; </b><strike> ₹2,459</strike></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <i id="right" class="fa-solid fas fa-angle-right" style="visibility: hidden;"></i> -->
+        </div>
+    </section><br><br>
+
+    <!-- banners icons -->
+
+    <div class="banner">
+        <center>
+            <h1 style="color: #ffffff;;">This Companies is Supported as</h1>
+        </center><br><br>
+        <h2>Trusted by over 15,000 companies and millions of learners around the world</h2>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"
+                alt="Google">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/020/336/289/small_2x/samsung-logo-samsung-icon-free-free-vector.jpg"
+                alt="Samsung">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" alt="wipro">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png"
+                alt="infosis">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/sony-logo-black-and-white.png" alt="sony">
+            <img src="https://logodix.com/logo/995526.png" alt="apple">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Microsoft_logo_-_2012_%28vertical%29.svg/1910px-Microsoft_logo_-_2012_%28vertical%29.svg.png"
+                alt="microsoft">
+            <img src="https://caproasia.com/wp-content/uploads/2015/07/Blackrock-Logo-Thumbnail.jpg" alt="black rock">
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yash-kapure-64895a268/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/YashBhavsa89455?t=ItnD1kXPYnr1Dge7oALm0g&s=08"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+</html>

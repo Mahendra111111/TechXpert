@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Composer</title>
+
+    <!-- Iconscout CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="/css/email.css">
+    <link rel="stylesheet" href="/css/prfile-card.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/student-profile.css">
+
+    <!-- Custom CSS for Email Form -->
+    <style>
+        .email-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .email-form h2 {
+            text-align: center;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .email-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email-form label {
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .email-form input[type="email"],
+        .email-form input[type="text"],
+        .email-form textarea {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .email-form input[type="email"]:focus,
+        .email-form input[type="text"]:focus,
+        .email-form textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .email-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .email-form button {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .email-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <a href="/main.html"> <img src="/images/profile.jpeg" alt=""></a>
+            </div>
+            <span class="logo_name"><a href="/main.html">Tech Xpert</a></span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/Admin-panel/admin.html">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Main Page</span>
+                    </a></li>
+                <li>
+                    <a href="#" class="dropdown-btn">
+                        <i class="uil uil-files-landscapes"></i>
+                        <span class="link-name">Courses &#9660;</span>
+                    </a>
+                    <div class="dropdown-container">
+                        <a href="#"><i class="uil uil-file"></i><span class="link-name"> Folder 1 </span></a>
+                        <a href="#"><i class="uil uil-image"></i><span class="link-name"> Folder 1 </span></a>
+                        <a href="#"><i class="uil uil-video"></i><span class="link-name"> Folder 1 </span></a>
+                        <a href="#"><i class="uil uil-music"></i><span class="link-name"> Folder 1 </span></a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="dropdown-btn">
+                        <i class="uil uil-folder"></i>
+                        <span class="link-name">Category &#9660;</span>
+                    </a>
+                    <div class="dropdown-container">
+                        <a href="#"><i class="uil uil-folder"></i><span class="link-name"> Folder 1 </span></a>
+                        <a href="#"><i class="uil uil-folder"></i><span class="link-name"> Folder 2 </span></a>
+                        <a href="#"><i class="uil uil-folder"></i><span class="link-name"> Folder 3 </span></a>
+                        <a href="#"><i class="uil uil-folder"></i><span class="link-name"> Folder 4 </span></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="/Admin-panel/email.html">
+                        <i class='fas fa-envelope'></i>
+                        <span class="link-name">E-mail</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Admin-panel/Edit.html">
+                        <i class="uil uil-circle"></i>
+                        <span class="link-name">Edit</span>
+                    </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="#">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- email form -->
+    <section class="dashboard" id="Dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="email-form">
+            <h2>Send Email</h2>
+            <form id="gmailForm" onsubmit="sendEmail(event)">
+                <div>
+                    <label for="to">To:</label>
+                    <input type="email" id="to" name="to" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Email</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/js/student-profile.js"></script>
+    <script src="/js/email.js"></script>
+
+    <script>
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+
+            const to = document.getElementById('to').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Here you would typically call your email sending service
+            // For demo purposes, we'll just log to the console
+            console.log('Sending Email...');
+            console.log('To:', to);
+            console.log('Subject:', subject);
+            console.log('Message:', message);
+
+            // After sending, you might want to clear the form or give feedback to the user
+            document.getElementById('gmailForm').reset();
+        }
+    </script>
+</body>
+
+</html>

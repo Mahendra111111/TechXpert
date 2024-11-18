@@ -1,0 +1,177 @@
+.main {
+  max-width: 800px;
+  margin: 20px 6%;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.main:hover {
+  background-color: #7c7c7c99;
+  border-radius: 1%;
+  transition: 0.1s;
+}
+
+.main b {
+  color: #333;
+  font-size: 110%;
+}
+
+.main h2 {
+  font-size: 225%;
+  color: #b2c8ff;
+}
+
+.hr2 {
+  float: right;
+  width: 20%;
+  margin-right: 8%;
+}
+
+.text-total {
+  font-size: 95%;
+  color: #686868;
+  margin-right: 25%;
+}
+
+.amount {
+  margin-top: -46%;
+  margin-right: -58%;
+}
+
+.item-details .p2,
+.p1 {
+  color: gray;
+  font-size: 72%;
+
+  /* p1 */
+
+  margin-top: 2%;
+  font-size: 74%;
+  color: #747474;
+}
+
+.item-details h3 {
+  font-size: 97%;
+  color: white;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-image img {
+  margin-top: 0%;
+  max-width: 50%;
+}
+
+.item-details {
+  flex-grow: 1;
+  margin-left: -200px;
+}
+
+.cart-rating {
+  margin-top: 10px;
+}
+
+.bestseller {
+  background-color: #fffb7e;
+  color: #333;
+  padding: 3px 7px;
+  font-size: 73%;
+  margin-right: 10px;
+}
+
+.stars {
+  color: #ff9d39;
+}
+
+.reviews {
+  color: #888;
+  font-size: 65%;
+  margin-left: 5px;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-details {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .amount {
+    margin-top: -46%;
+    margin-right: -58%;
+  }
+
+  .hr2,
+  .text-total,
+  .amount {
+    float: none;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Media query for medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  .main {
+    max-width: 600px;
+    margin: 10px auto;
+  }
+
+  .amount {
+    margin-top: 0%;
+    margin-right: 10%;
+  }
+}
+
+.item-details .p2,
+.p1 {
+  font-size: 65%;
+}
+
+
+/* Media query for large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+  .main {
+    max-width: 700px;
+    margin: 15px auto;
+  }
+
+  .amount {
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+}
+
+/* Media query for extra-large screens */
+@media (min-width: 993px) {
+  .main {
+    max-width: 1098px;
+  }
+
+  .amount {
+    margin-top: -59%;
+    margin-right: 0%;
+  }
+}
+
+.Play {
+  padding: 1% 2%;
+  background-color: rgb(178, 119, 255);
+  border: none;
+  border-radius: 6%;
+}
+
+.Play:hover{
+  background-color: rgb(152, 73, 255);
+  transition: 0.3s;
+}
